@@ -1,0 +1,105 @@
+.whole-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 10px;
+    text-align: center;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.Header{
+    text-align: center;
+}
+.logo{
+    height: 100px;
+}
+img{
+    width:240px;
+    height:290px;
+}
+.exit{
+    left: 80%;
+    bottom: 7%;
+
+    position: absolute;
+
+}
+#setImage{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+}
+#setImage img{
+    width: 500px;
+    height: 350px;
+}
+.foot{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+@media (max-width: 999px)
+{
+.whole-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#setImage{
+    top: 22%;
+    left: 35%;
+}
+#setImage img{
+    width: 320px;
+}
+.firstone{
+    grid-column: span 1;
+}
+
+@media (max-width: 743px){
+    .whole-grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    img{
+        width:330px;
+        height:290px;
+    }
+    #setImage{
+        top: 25%;
+        left: 29%;
+    }
+    #setImage img{
+        width: 300px;
+    }
+
+}
+@media (max-width: 500px){
+    #setImage{
+        top: 14%;
+        left: 15%;
+    }
+    #setImage img{
+        width: 300px;
+    }
+}
+@media (max-width: 380px){
+    #setImage{
+        top: 14%;
+        left: 10%;
+    }
+    #setImage img{
+        width: 300px;
+    }
+}
+@media (max-width: 330px){
+    #setImage{
+        top: 14%;
+        left: 7%;
+    }
+    #setImage img{
+        width: 300px;
+    }
+}
+}
